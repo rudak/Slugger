@@ -1,0 +1,26 @@
+{
+    "name": "rudak/twig-slug-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony twigSlugger",
+    "keywords": ["twig","slug"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Kadur Arnaud",
+            "email": "contact@kadur-arnaud.fr",
+            "homepage": "http://kadur-arnaud.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.3",
+        "twig/twig": "*",
+    },
+    "autoload": {
+        "psr-0": {
+            "Rudak\\twigSlugger": ""
+        }
+    },
+    "target-dir": "Rudak/twigSlugger",
+    "minimum-stability": "dev"
+}
