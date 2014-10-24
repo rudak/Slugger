@@ -1,5 +1,5 @@
 services:
     twig.extension.slugExt:
-        class: Rudak\TwigSlugger\Twig\Extension\TwigExtension
+        class: Rudak\SlugBundle\Twig\Extension\TwigExtension
         tags:
             - { name: twig.extension }

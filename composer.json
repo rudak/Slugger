@@ -1,7 +1,7 @@
 {
-    "name": "rudak/twig-slug-bundle",
+    "name": "rudak/slug-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony TwigSlugger",
+    "description": "Simple slug bundle for Symfony2",
     "keywords": ["twig","slug"],
     "license": "GPL-3.0+",
     "authors": [
@@ -18,9 +18,9 @@
     },
     "autoload": {
         "psr-0": {
-            "Rudak\\TwigSlugger": ""
+            "Rudak\\Slug": ""
         }
     },
-    "target-dir": "Rudak/TwigSlugger",
+    "target-dir": "Rudak/Slug",
     "minimum-stability": "dev"
 }
