@@ -1,6 +1,6 @@
 <?php
  
-namespace Perso\TwigBundle;
+namespace Rudak\TwigSlugger;
  
 use Symfony\Component\HttpKernel\Bundle\Bundle;
  

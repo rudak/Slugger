@@ -1,5 +1,5 @@
 <?php
-namespace Rudak\twigSlugger\Utils;
+namespace Rudak\TwigSlugger\Utils;
 
 class Slug
 {

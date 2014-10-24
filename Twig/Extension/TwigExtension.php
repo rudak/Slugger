@@ -1,6 +1,6 @@
 <?php
 
-namespace Rudak\twigSlugger\Twig\Extension;
+namespace Rudak\TwigSlugger\Twig\Extension;
 
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Bundle\TwigBundle\Loader\FilesystemLoader;

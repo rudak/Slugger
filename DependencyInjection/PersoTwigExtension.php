@@ -1,6 +1,6 @@
 <?php
  
-namespace Rudak\twigSlugger\DependencyInjection;
+namespace Rudak\TwigSlugger\DependencyInjection;
  
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
