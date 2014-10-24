@@ -12,7 +12,7 @@ use Symfony\Component\Config\FileLocator;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class PersoTwigExtension extends Extension {
+class RudakTwigSluggerExtension extends Extension {
  
     /**
      * {@inheritDoc}
