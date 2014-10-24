@@ -1,7 +1,7 @@
 twigSlugger
 ===========
 
-A simple twig extention for generating slugs
+A simple twig extention for generate slugs
 
 #How to use it
 
