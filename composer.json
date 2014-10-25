@@ -1,7 +1,7 @@
 {
     "name": "rudak/slug-bundle",
     "type": "symfony-bundle",
-    "description": "Simple slug bundle for Symfony2",
+    "description": "Simple slug bundle for Symfony2 (and twig...)",
     "keywords": ["twig","slug"],
     "license": "GPL-3.0+",
     "authors": [

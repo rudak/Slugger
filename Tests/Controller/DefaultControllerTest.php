@@ -1,6 +1,6 @@
 <?php
 
-namespace Rudak\SlugBundle\Tests\Controller;
+namespace Rudak\Slug\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

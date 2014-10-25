@@ -1,6 +1,6 @@
 <?php
 
-namespace Rudak\SlugBundle\DependencyInjection;
+namespace Rudak\Slug\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

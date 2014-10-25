@@ -1,44 +1,26 @@
 <?php
-namespace Rudak\TwigSlugger\Utils;
+namespace Rudak\Slug\Utils;
 
 class Slug
 {
 
-    private $string;
-    private $slug;
-
-    public function __construct($string = null)
+    public static function slugit($str)
     {
-        if ($string != null) {
-            $this->string = $string;
-        }
+        return self::slugTheString($str);
     }
 
-    public function setString($string = '')
-    {
-        $this->string = $string;
-        return $this;
-    }
-
-    public function getSlug()
-    {
-        if (empty($this->slug)) {
-            $this->slugTheString();
-        }
-        return $this->slug;
-    }
 
     /**
      * Fais le sale boulot
      * @param type $str
      * @return type
      */
-    private function slugTheString()
+    private static function slugTheString($str)
     {
         // remplacer ce qui n'est pas une letre par un tiret
-        $text = preg_replace('~[^\\pL\d]+~u', '-', $this->string);
+        $text = preg_replace('~[^\\pL\d]+~u', '-', $str);
         // virer les accents
-        $text = $this->enleve_accents($text);
+        $text = self::enleve_accents($text);
         // trim
         $text = trim($text, '-');
         // transliterate
@@ -46,8 +28,7 @@ class Slug
         // lowercase
         $text = strtolower($text);
         // remove unwanted characters ...and hydrat slug
-        $this->slug = preg_replace('~[^-\w]+~', '', $text);
-        $text       = null;
+        return preg_replace('~[^-\w]+~', '', $text);
     }
 
     /**
@@ -55,7 +36,7 @@ class Slug
      * @param type $str
      * @return type
      */
-    private function enleve_accents($str)
+    private static function enleve_accents($str)
     {
         $a = array('À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð',
             'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'ß', 'à', 'á', 'â', 'ã',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rudak\SlugBundle;
+namespace Rudak\Slug;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

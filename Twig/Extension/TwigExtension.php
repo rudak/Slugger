@@ -1,8 +1,8 @@
 <?php
 
-namespace Rudak\TwigSlugger\Twig\Extension;
+namespace Rudak\Slug\Twig\Extension;
 
-use Rudak\TwigSlugger\Utils\Slug;
+use Rudak\Slug\Utils\Slug;
 
 class TwigExtension extends \Twig_Extension
 {
@@ -27,9 +27,7 @@ class TwigExtension extends \Twig_Extension
      */
     public function slugit($str)
     {
-        $slug = new Slug();
-        $slug->setString($str);
-        return $slug->getSlug();
+        return Slug::slugit($str);
     }
 
 }
