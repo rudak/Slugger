@@ -1,4 +1,4 @@
-Slugger
+Slugger (for Symfony2)
 ===========
 
 A simple way for generate slugs (everyvhere in your web app)
