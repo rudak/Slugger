@@ -36,12 +36,15 @@ Access the service of the container like this:
 Use the service (a static Slug class) like that:
 
     echo $Slugger::slugit('slug this string please')
+    // slug-this-string-please
 
 ###Exemple
     
         public function getPostAction()
         {
-            $post    = $this->getDoctrine()->getManager()->getRepository('YourBundle:post')->find(1);
+            $post    = $this->getDoctrine()->getManager()
+                            ->getRepository('YourBundle:post')->find(1);
+            
             $Slugger = $this->get('rudak.slugger');
             return $this->render('YourBundle:Default:your-view.html.twig', array(
                 'titleSlug' => $Slugger::slugit($post->getTitle()),
