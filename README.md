@@ -16,7 +16,7 @@ add the folowing line in the require area
 Enable the bundle in the kernel, in ```appKernel.php```
 
     new Rudak\Slug\RudakSlugBundle(),
-
+============
 #How to use it ?
 
 ##In Twig templates
