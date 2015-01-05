@@ -4,5 +4,5 @@ services:
         tags:
             - { name: twig.extension }
     rudak.slugger:
-        class: Rudak\Slug\Utils\Slug
+        class: Rudak\SlugBundle\Utils\Slug
 
